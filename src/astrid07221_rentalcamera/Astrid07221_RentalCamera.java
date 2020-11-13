@@ -11,7 +11,12 @@ public class Astrid07221_RentalCamera {
     
   
     public static void main(String[] args) {
+        Astrid07221_RentalCamera data = new Astrid07221_RentalCamera();
         System.out.println("Selamat Datang Di Rental Camera !!");
+        data.viewMenu();
+    }
+    
+    void viewMenu(){
     int Astrid07221_pil;
     do{
         System.out.println("Pilihan : ");
@@ -35,7 +40,8 @@ public class Astrid07221_RentalCamera {
         }
     }while(Astrid07221_pil!=5);
 }
-    static void Astrid07221_daftar(){
+  
+    void Astrid07221_daftar(){
         System.out.println("1. Input Petugas");
         System.out.println("2. Input Camera");
         System.out.println("3. Input Pelanggan");
@@ -113,7 +119,7 @@ public class Astrid07221_RentalCamera {
    }
  }
                  
-    static void Astrid07221_view(){
+    void Astrid07221_view(){
     System.out.print(" Masukkan Pilihan anda (Petugas/Camera/Pelanggan) : ");
         String inputdata = input.next();
         if(inputdata.equals("Petugas")){
@@ -150,7 +156,7 @@ public class Astrid07221_RentalCamera {
         }
     }
     
-    static void Astrid07221_update(){
+    void Astrid07221_update(){
         System.out.print(" Masukkan Pilihan anda (Petugas/Camera) : ");
         String inputdata = input.next();
         if(inputdata.equals("Petugas")){
@@ -196,7 +202,7 @@ public class Astrid07221_RentalCamera {
         }
    }
     
-    static void Astrid07221_Delete(){
+    void Astrid07221_Delete(){
         
         System.out.print(" Masukkan Pilihan anda (Petugas/Camera/Pelanggan) : ");
         String inputdata = input.next();
